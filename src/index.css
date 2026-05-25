@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background:
+    radial-gradient(circle at top, #3D3B8E, transparent 40%),
+    black;
+}
+
+.card {
+  width: 500px;
+
+  padding: 50px;
+
+  border-radius: 40px;
+
+  background: rgba(184, 182, 232, 0.12);
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  text-align: center;
+}
+
+h1 {
+  color: #B8B6E8;
+
+  font-size: 3rem;
+
+  margin-bottom: 20px;
+}
+
+p {
+  color: white;
+
+  margin-bottom: 30px;
+}
+
+button {
+  background: #B8B6E8;
+
+  border: none;
+
+  padding: 14px 28px;
+
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 140px);
+
+  gap: 20px;
+
+  justify-content: center;
+
+  margin-top: 30px;
+}
+
+.tile {
+  width: 140px;
+
+  height: 140px;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.tile.active {
+  transform: scale(1.08);
+
+  box-shadow: 0 0 40px white;
+}
+
+.purple {
+  background: #3D3B8E;
+}
+
+.white {
+  background: #E8E8F0;
+}
+
+.dark {
+  background: #111;
+}
+
+.light {
+  background: #B8B6E8;
+}
